@@ -2,7 +2,7 @@
  hosts: localhost
  vars:
    NAME: durgaprasad
-   skills: 
+   Skills: 
     -Devops
     -Shell
     -Ansible
@@ -11,7 +11,7 @@
      Devops: 7
      Aws: 6
      Docker: 3
-    Trainer: 2
+     Trainer: 2
    tasks:
    -name: print key value pair
     ansible.builtin.debug:
@@ -20,16 +20,16 @@
 
 
     -name: print list
-      ansible.builtn.debug:
-      sg: "skills: {{skills}}"
+      ansible.builtin.debug:
+      msg: "skills: {{skills}}"
 
     
     -name: print map
-      ansible.builtn.debug:
+      ansible.builtin.debug:
       msg: " Experience: {{Experince}}"
     
     -name: print boolean
-       ansible.builtn.debug:
+       ansible.builtin.debug:
         msg: " Trainer: {{Trainer}}"
      
  
