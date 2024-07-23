@@ -1,7 +1,6 @@
 -name: conditions
-  host: localhost
-  tasks:
-  -  name: check roboshop user exists or not
+ host: localhost
+ tasks:
+  - name: check roboshop user exists or not
     ansible.builtn.command: id roboshop
     register: user #user is a variable name
-    
