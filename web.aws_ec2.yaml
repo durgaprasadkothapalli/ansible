@@ -1,0 +1,7 @@
+plugins: amazon.aws_ec2.yaml
+regions:
+ -us east -1
+filters:
+tags: Name:
+ -web
+ 
